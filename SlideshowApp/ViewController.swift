@@ -1,20 +1,12 @@
-//
-//参考サイトhttp://seeku.hateblo.jp/entry/2016/07/02/221842
-//https://secondflush2.blog.fc2.com/blog-entry-96.html
-//https://teratail.com/questions/165660
-//
-
 //  ViewController.swift
 //  SlideshowApp
 //
 //  Created by 三村文子 on 2020/01/26.
 //  Copyright © 2020 三村文子. All rights reserved.
-//
 
 import UIKit
 
 class ViewController: UIViewController {
-    
     
     
     @IBOutlet weak var backbutton: UIButton!
@@ -34,7 +26,7 @@ class ViewController: UIViewController {
     
     
     //image画像の配列
-    let images = [UIImage(named: "rainbow"), UIImage(named: "rainbow2"), UIImage(named: "rainbow3"), UIImage(named:"rainbow4"), UIImage(named:"rainbow5"), UIImage(named:"rainbow6"), UIImage(named:"rainbow7")]
+    let images = [UIImage(named: "rainbow"), UIImage(named: "rainbow2"), UIImage(named: "rainbow3"), UIImage(named:"rainbow4"), UIImage(named:"rainbow5")]
     
     
     override func viewDidLoad() {
@@ -62,9 +54,9 @@ class ViewController: UIViewController {
         } else {
             answerNumber += 1
             
-            UIImageView.image = images[answerNumber]
-            
         }
+        UIImageView.image = images[answerNumber]
+        
     }
     
     @IBAction func modorubutton(_ sender: Any) {
@@ -73,13 +65,13 @@ class ViewController: UIViewController {
         } else {
             answerNumber -= 1
         }
+        
         UIImageView.image = images[answerNumber]
     }
     
     //再生ストップボタン
     @IBAction func startStop(_ sender: Any) {
         
-        //ここから写経
         if self.timer == nil {
             //タイマーを設定
             self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(ViewController.onTimer(_:)), userInfo: nil, repeats: true)
@@ -92,7 +84,7 @@ class ViewController: UIViewController {
             susumubutton.isEnabled = false
             
             
-            playbutton.setTitle("停止", for: .normal)
+           
             
         } else if self.timer != nil {
             
@@ -108,8 +100,6 @@ class ViewController: UIViewController {
             //進むボタンタップ不可
             susumubutton.isEnabled = true
             
-            //ボタンの名前を再生とする
-            playbutton.setTitle("再生", for: .normal)
             
             
             //⭐️ Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(ViewController.onTimer(_:)), userInfo: nil, repeats: true)
@@ -128,10 +118,9 @@ class ViewController: UIViewController {
         } else {
             answerNumber += 1
             
-            UIImageView.image = images[answerNumber]
-            
         }
- 
+        UIImageView.image = images[answerNumber]
+        
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
@@ -140,9 +129,20 @@ class ViewController: UIViewController {
     //画面遷移させる時に必ず設定する！
     //segueからが遷移先のtaped
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         let tappedViewController: tappedViewController = segue.destination as! tappedViewController
+        let tappedViewController: tappedViewController = segue.destination as! tappedViewController
         tappedViewController.UIImageView = self.UIImageView
         
-        
-}
+    }
+    
+    @IBAction func stopbutton(_ sender: Any) {
+        //imageViewの上に透明に置いているボタンを押すとタイマーがストップする
+        if let nowTimer = timer {
+            //もし実行中だったら停止する
+            if nowTimer.isValid == true {
+                //タイマー停止
+                nowTimer.invalidate()    //集中講座から
+               
+            }
+        }
+    }
 }

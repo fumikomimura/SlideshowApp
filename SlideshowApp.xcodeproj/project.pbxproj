@@ -15,12 +15,10 @@
 		E544F65923DD1E4900AE93E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E544F65723DD1E4900AE93E5 /* LaunchScreen.storyboard */; };
 		E544F66423DD1E4900AE93E5 /* SlideshowAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E544F66323DD1E4900AE93E5 /* SlideshowAppTests.swift */; };
 		E544F66F23DD1E4900AE93E5 /* SlideshowAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E544F66E23DD1E4900AE93E5 /* SlideshowAppUITests.swift */; };
-		E544F6A123DF113C00AE93E5 /* rainbow6.png in Resources */ = {isa = PBXBuildFile; fileRef = E544F69A23DF112E00AE93E5 /* rainbow6.png */; };
 		E544F6A223DF113C00AE93E5 /* rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = E544F69B23DF113100AE93E5 /* rainbow.png */; };
 		E544F6A323DF113C00AE93E5 /* rainbow5.png in Resources */ = {isa = PBXBuildFile; fileRef = E544F69C23DF113300AE93E5 /* rainbow5.png */; };
 		E544F6A423DF113C00AE93E5 /* rainbow4.png in Resources */ = {isa = PBXBuildFile; fileRef = E544F69D23DF113600AE93E5 /* rainbow4.png */; };
 		E544F6A523DF113C00AE93E5 /* rainbow2.png in Resources */ = {isa = PBXBuildFile; fileRef = E544F69E23DF113900AE93E5 /* rainbow2.png */; };
-		E544F6A623DF113C00AE93E5 /* rainbow7.png in Resources */ = {isa = PBXBuildFile; fileRef = E544F69F23DF113A00AE93E5 /* rainbow7.png */; };
 		E544F6A723DF113C00AE93E5 /* rainbow3.png in Resources */ = {isa = PBXBuildFile; fileRef = E544F6A023DF113B00AE93E5 /* rainbow3.png */; };
 		E5E8D4B623E8139A00FA9E5D /* tappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E8D4B523E8139A00FA9E5D /* tappedViewController.swift */; };
 /* End PBXBuildFile section */
@@ -57,12 +55,10 @@
 		E544F66A23DD1E4900AE93E5 /* SlideshowAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideshowAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E544F66E23DD1E4900AE93E5 /* SlideshowAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowAppUITests.swift; sourceTree = "<group>"; };
 		E544F67023DD1E4900AE93E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E544F69A23DF112E00AE93E5 /* rainbow6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainbow6.png; sourceTree = "<group>"; };
 		E544F69B23DF113100AE93E5 /* rainbow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainbow.png; sourceTree = "<group>"; };
 		E544F69C23DF113300AE93E5 /* rainbow5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainbow5.png; sourceTree = "<group>"; };
 		E544F69D23DF113600AE93E5 /* rainbow4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainbow4.png; sourceTree = "<group>"; };
 		E544F69E23DF113900AE93E5 /* rainbow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainbow2.png; sourceTree = "<group>"; };
-		E544F69F23DF113A00AE93E5 /* rainbow7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainbow7.png; sourceTree = "<group>"; };
 		E544F6A023DF113B00AE93E5 /* rainbow3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainbow3.png; sourceTree = "<group>"; };
 		E5E8D4B523E8139A00FA9E5D /* tappedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tappedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,8 +122,6 @@
 				E544F6A023DF113B00AE93E5 /* rainbow3.png */,
 				E544F69D23DF113600AE93E5 /* rainbow4.png */,
 				E544F69C23DF113300AE93E5 /* rainbow5.png */,
-				E544F69A23DF112E00AE93E5 /* rainbow6.png */,
-				E544F69F23DF113A00AE93E5 /* rainbow7.png */,
 				E544F65723DD1E4900AE93E5 /* LaunchScreen.storyboard */,
 				E544F65A23DD1E4900AE93E5 /* Info.plist */,
 			);
@@ -264,8 +258,6 @@
 				E544F6A423DF113C00AE93E5 /* rainbow4.png in Resources */,
 				E544F6A723DF113C00AE93E5 /* rainbow3.png in Resources */,
 				E544F65423DD1E4400AE93E5 /* Main.storyboard in Resources */,
-				E544F6A123DF113C00AE93E5 /* rainbow6.png in Resources */,
-				E544F6A623DF113C00AE93E5 /* rainbow7.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
